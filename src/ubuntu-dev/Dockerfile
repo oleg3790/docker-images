@@ -47,3 +47,5 @@ RUN curl https://download.visualstudio.microsoft.com/download/pr/c7afc344-acf0-4
 # Add binaries directory to PATH env var so we can use tools without specifying full path
 ENV PATH="/root/bin:/bin/dotnet:${PATH}"
 ENV DOTNET_ROOT=/bin/dotnet
+
+CMD ["sleep", "infinity"]
