@@ -10,4 +10,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN wget https://releases.hashicorp.com/terraform/0.12.0/terraform_0.12.0_linux_amd64.zip --no-check-certificate && \
     unzip ./terraform_0.12.0_linux_amd64.zip -d /usr/local/bin/
 
+# Allows the container to stay up so we can remote into it
 CMD ["sleep", "infinity"]

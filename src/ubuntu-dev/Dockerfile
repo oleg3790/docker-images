@@ -48,4 +48,5 @@ RUN curl https://download.visualstudio.microsoft.com/download/pr/c7afc344-acf0-4
 ENV PATH="/root/bin:/bin/dotnet:${PATH}"
 ENV DOTNET_ROOT=/bin/dotnet
 
+# Allows the container to stay up so we can remote into it
 CMD ["sleep", "infinity"]
