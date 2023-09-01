@@ -29,4 +29,4 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 # Allows the container to stay up so we can remote into it
 # CMD ["sleep", "infinity"]
 
-CMD ["/bin/bash", "script.sh"]
+ENTRYPOINT ["sh", "script.sh", "-p1", "param1"]
